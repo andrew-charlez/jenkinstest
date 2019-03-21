@@ -1,0 +1,3 @@
+JENKINS_PASS=$(cat JENKINSPASS.txt)
+JENKINS_USER=$(cat JENKINSUSER.txt)
+docker build . --build-arg JENKINS_PASS=${JENKINS_PASS} --build-arg JENKINS_USER=${JENKINS_USER}S
